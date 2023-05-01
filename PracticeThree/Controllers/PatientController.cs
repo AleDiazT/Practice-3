@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Filters;
 using UPB.CoreLogic.Models;
 using UPB.CoreLogic.Managers;
 
@@ -27,9 +28,10 @@ public class PatientController : ControllerBase
     }
     [HttpPut]
     [Route("{CI}")]
-    public Patient Put([FromRoute] int CI,[FromBody]Patient patientToUpdate)
+    [SwaggerRequestExample(null, typeof(PatientPUTmodel))]
+    public Patient Put([FromRoute] int CI,[FromBody] PatientPUTmodel patientToUpdate)
     {
-        return _patientManager.Update(patientToUpdate.CI,patientToUpdate.Name,patientToUpdate.LastName);
+        return _patientManager.Update(CI,patientToUpdate.Name,patientToUpdate.LastName);
     }
     [HttpPost]
     public Patient Post([FromBody]Patient patientToCreate)
