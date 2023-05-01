@@ -33,8 +33,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs\\log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
-
-Log.Information("Serilog configured");
+    
 builder.Host.UseSerilog();
 
 var app = builder.Build();
