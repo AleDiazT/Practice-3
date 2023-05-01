@@ -29,7 +29,7 @@ public class PatientController : ControllerBase
     [Route("{CI}")]
     public Patient Put([FromRoute] int CI,[FromBody]Patient patientToUpdate)
     {
-        return _patientManager.Update(CI);
+        return _patientManager.Update(patientToUpdate.CI,patientToUpdate.Name,patientToUpdate.LastName);
     }
     [HttpPost]
     public Patient Post([FromBody]Patient patientToCreate)
