@@ -97,3 +97,8 @@
 2023-05-01 13:59:56.859 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
 2023-05-01 13:59:56.862 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5107/Patient application/json 76 - 200 - application/json;+charset=utf-8 20.0347ms
 2023-05-01 15:04:34.065 -04:00 [INF] Application is shutting down...
+2023-05-01 16:29:17.716 -04:00 [INF] Now listening on: http://localhost:5107
+2023-05-01 16:29:17.750 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 16:29:17.752 -04:00 [INF] Hosting environment: Development
+2023-05-01 16:29:17.753 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-01 16:31:46.543 -04:00 [INF] Application is shutting down...
