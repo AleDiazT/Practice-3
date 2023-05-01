@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,6 +25,17 @@ builder.Services.AddSwaggerGen(options =>
     });
 
 });
+
+// SERILOG
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.File("logs\\log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+Log.Information("Serilog configured");
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 
