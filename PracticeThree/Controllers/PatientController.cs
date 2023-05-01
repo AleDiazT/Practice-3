@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using UPB.PracticeThree.Models;
-using UPB.PracticeThree.Managers;
+using UPB.CoreLogic.Models;
+using UPB.CoreLogic.Managers;
 
 namespace UPB.PracticeThree.Controllers;
 
@@ -8,10 +8,10 @@ namespace UPB.PracticeThree.Controllers;
 [Route("[controller]")]
 public class PatientController : ControllerBase
 {
-    private PatientManager _patientManager;
-    public PatientController()
+    private readonly PatientManager _patientManager;
+    public PatientController(PatientManager patientManager)
     {       
-        _patientManager = new PatientManager();
+        _patientManager = patientManager;
     }
 
     [HttpGet]

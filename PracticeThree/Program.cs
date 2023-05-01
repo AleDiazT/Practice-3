@@ -1,8 +1,10 @@
 using Microsoft.OpenApi.Models;
+using UPB.CoreLogic.Managers;
 using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<PatientManager>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -33,7 +35,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs\\log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
-    
+
 builder.Host.UseSerilog();
 
 var app = builder.Build();
