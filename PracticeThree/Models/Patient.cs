@@ -1,6 +1,6 @@
 namespace UPB.PracticeThree.Models;
 
-public class Pacient
+public class Patient
 {
     public String Name { get; set; }
 

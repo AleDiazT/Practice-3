@@ -8,3 +8,12 @@
 2023-05-01 11:44:49.999 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5107/swagger/v1/swagger.json - -
 2023-05-01 11:44:50.067 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.4384ms
 2023-05-01 11:44:57.163 -04:00 [INF] Application is shutting down...
+2023-05-01 12:12:20.455 -04:00 [INF] Now listening on: http://localhost:5107
+2023-05-01 12:12:20.495 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-01 12:12:20.497 -04:00 [INF] Hosting environment: Development
+2023-05-01 12:12:20.499 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-01 12:13:37.214 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5107/swagger/index.html - -
+2023-05-01 12:13:37.295 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5107/swagger/index.html - - - 200 - text/html;charset=utf-8 83.1658ms
+2023-05-01 12:13:37.788 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5107/swagger/v1/swagger.json - -
+2023-05-01 12:13:37.861 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5107/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.8413ms
+2023-05-01 12:14:16.732 -04:00 [INF] Application is shutting down...
