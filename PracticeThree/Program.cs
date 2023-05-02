@@ -30,12 +30,27 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // SERILOG
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .Enrich.FromLogContext()
-    .WriteTo.Console()
-    .WriteTo.File("logs\\log-.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+switch(builder.Environment.EnvironmentName)
+{
+    case "Development":
+        Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .Enrich.FromLogContext()
+            .WriteTo.Console()
+            .WriteTo.File("logs\\log-.txt", rollingInterval: RollingInterval.Day)
+            .CreateLogger();
+        break;
+    case "QA":
+        Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Information()
+            .Enrich.FromLogContext()
+            .WriteTo.Console()
+            .CreateLogger();
+        break;
+    case "UAT":
+        break;
+}
+
 
 builder.Host.UseSerilog();
 
@@ -46,11 +61,9 @@ app.UseGlobalExceptionHandler();
 //app.UseHttpsRedirection();
 //app.UseAuthorization();
 //app.UseCors();
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
+
 app.MapControllers();
 
 app.Run();
