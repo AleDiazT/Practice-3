@@ -30,27 +30,10 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // SERILOG
-switch(builder.Environment.EnvironmentName)
-{
-    case "Development":
-        Log.Logger = new LoggerConfiguration()
-            .MinimumLevel.Information()
-            .Enrich.FromLogContext()
-            .WriteTo.Console()
-            .WriteTo.File("logs\\log-.txt", rollingInterval: RollingInterval.Day)
-            .CreateLogger();
-        break;
-    case "QA":
-        Log.Logger = new LoggerConfiguration()
-            .MinimumLevel.Information()
-            .Enrich.FromLogContext()
-            .WriteTo.Console()
-            .CreateLogger();
-        break;
-    case "UAT":
-        break;
-}
+var loggerConfiguration = new LoggerConfiguration()
+    .ReadFrom.Configuration(Configuration);
 
+Log.Logger = loggerConfiguration.CreateLogger();
 
 builder.Host.UseSerilog();
 
