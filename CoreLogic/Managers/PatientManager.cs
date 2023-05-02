@@ -1,4 +1,5 @@
 using UPB.CoreLogic.Models;
+using Microsoft.Extensions.Configuration;
 using System.Text.RegularExpressions;
 
 namespace UPB.CoreLogic.Managers;
@@ -6,9 +7,14 @@ namespace UPB.CoreLogic.Managers;
 public class PatientManager
 {
     private List<Patient> _patients;
-    private String _path = "../listPatients.txt";
-    public PatientManager()
+    private string _path;
+    public PatientManager(IConfiguration configuration)
     {
+        _path = configuration.GetSection("PathToListPatients").Value;
+        if (_path == null)
+        {
+            throw new Exception("Not provided by the enviroment");
+        }
         _patients = loadPatients(_path);
     }
     public List<Patient> GetAll()
@@ -18,7 +24,7 @@ public class PatientManager
 
     public Patient GetByCI(int ci)
     {
-        if (ci < 0)
+        if (ci <= 0)
         {
             throw new Exception("Invalid CI");
         }
@@ -33,7 +39,7 @@ public class PatientManager
 
     public Patient Update(int ci,string name, string lastname)
     {
-        if (ci < 0)
+        if (ci <= 0)
         {
             throw new Exception("Invalid CI");
         }
@@ -60,7 +66,7 @@ public class PatientManager
     public Patient Create(string name, string lastname, int ci)
     {
         string bloodtype = RndBloodType();
-        if(ci < 0)
+        if(ci <= 0)
         {
             throw new Exception("Invalid CI");
         }
@@ -86,7 +92,7 @@ public class PatientManager
 
     public Patient Delete(int ci)
     {
-        if (ci < 0)
+        if (ci <= 0)
         {
             throw new Exception("Invalid CI");
         }
@@ -189,7 +195,7 @@ public class PatientManager
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                string[] patientData = line.Split(';');
+                string[] patientData = line.Split(',');
                 int currentPatientCI = int.Parse(patientData[2]);
                 if (currentPatientCI == patientUpdate.CI)
                 {
@@ -225,7 +231,7 @@ public class PatientManager
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                string[] patientData = line.Split(';');
+                string[] patientData = line.Split(',');
                 int currentPatientCI = int.Parse(patientData[2]);
                 if (currentPatientCI != patientDelete.CI)
                 {

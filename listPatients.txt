@@ -1,1 +1,3 @@
 Ale,Diaz,123,a-
+Mariana,Urioste,5345,ab-
+Laura,Moscoso,234523,o+
