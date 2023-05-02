@@ -440,3 +440,27 @@ System.Exception: Invalid CI
 2023-05-02 00:13:05.941 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
 2023-05-02 00:13:05.942 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 10.9612ms
 2023-05-02 00:13:26.477 -04:00 [INF] Application is shutting down...
+2023-05-02 00:15:48.036 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:15:48.061 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:15:48.061 -04:00 [INF] Hosting environment: QA
+2023-05-02 00:15:48.061 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:16:29.813 -04:00 [INF] Application is shutting down...
+2023-05-02 00:16:49.397 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:16:49.436 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:16:49.439 -04:00 [INF] Hosting environment: Development
+2023-05-02 00:16:49.440 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:16:50.949 -04:00 [INF] Application is shutting down...
+2023-05-02 00:24:32.671 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:24:32.708 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:24:32.710 -04:00 [INF] Hosting environment: UAT
+2023-05-02 00:24:32.711 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:25:36.960 -04:00 [INF] Application is shutting down...
+2023-05-02 00:31:57.186 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:31:57.210 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:31:57.210 -04:00 [INF] Hosting environment: QA
+2023-05-02 00:31:57.210 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:32:00.112 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:32:00.196 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 87.4376ms
+2023-05-02 00:32:00.760 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:32:00.837 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.0445ms
+2023-05-02 00:32:06.452 -04:00 [INF] Application is shutting down...
