@@ -1,42 +1,44 @@
 using System.Globalization;
+using Serilog;
 
-namespace UPB.PracticeThree.Middlewares;
-
-public class ExceptionHandlerMiddleware
+namespace UPB.PracticeThree.Middlewares
 {
-    private readonly RequestDelegate _next;
-
-    public ExceptionHandlerMiddleware(RequestDelegate next)
+    public class ExceptionHandlerMiddleware
     {
-        _next = next;
-    }
+        private readonly RequestDelegate _next;
+        private readonly Serilog.ILogger _logger;
 
-    public async Task InvokeAsync(HttpContext context)
-    {
-        try
+        public ExceptionHandlerMiddleware(RequestDelegate next, Serilog.ILogger logger)
         {
-            await _next(context);
+            _next = next;
+            _logger = logger.ForContext<ExceptionHandlerMiddleware>();
         }
-        catch (System.Exception ex)
+
+        public async Task InvokeAsync(HttpContext context)
         {
-            // LOG ex.Message
-            HandleException(context, ex);
+            try
+            {
+                await _next(context);
+            }
+            catch (System.Exception ex)
+            {
+                _logger.Error(ex, "Sucedio el siguiente error: {Message}", ex.Message);
+                await HandleException(context, ex);
+            }
         }
-        
+
+        private static async Task HandleException(HttpContext context, Exception ex)
+        {
+            context.Response.ContentType = "text/json";
+            await context.Response.WriteAsync("Sucedio el siguiente error: " + ex.Message);
+        }
     }
 
-    private static Task HandleException(HttpContext context, Exception ex)
+    public static class ExceptionHandlerExtensions
     {
-        context.Response.ContentType = "text/json";
-        //context.Response.StatusCode = 500;
-        return context.Response.WriteAsync("Sucedio el siguiente error: " + ex.Message);
-    }
-}
-
-public static class ExceptionHandlerExtensions
-{
-    public static IApplicationBuilder UseGlobalExceptionHandler(this IApplicationBuilder app)
-    {
-        return app.UseMiddleware<ExceptionHandlerMiddleware>();
+        public static IApplicationBuilder UseGlobalExceptionHandler(this IApplicationBuilder app)
+        {
+            return app.UseMiddleware<ExceptionHandlerMiddleware>();
+        }
     }
 }

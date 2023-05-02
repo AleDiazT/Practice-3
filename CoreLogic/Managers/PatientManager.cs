@@ -28,12 +28,14 @@ public class PatientManager
         {
             throw new Exception("Invalid CI");
         }
+
         Patient patientfound;
         patientfound = _patients.Find(patient => patient.CI == ci);
         if (patientfound == null)
         {
             throw new Exception("Patient not found");
         }
+
         return patientfound;
     }
 

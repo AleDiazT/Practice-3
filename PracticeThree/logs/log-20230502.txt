@@ -1,0 +1,442 @@
+2023-05-02 00:00:12.693 -04:00 [INF] Application is shutting down...
+2023-05-02 00:00:24.345 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:00:24.381 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:00:24.383 -04:00 [INF] Hosting environment: Development
+2023-05-02 00:00:24.384 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:00:36.598 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:00:36.680 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 84.5491ms
+2023-05-02 00:00:37.154 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:00:37.222 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.1332ms
+2023-05-02 00:00:40.154 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-02 00:00:40.160 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:00:40.169 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:00:40.179 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 1.3122ms
+2023-05-02 00:00:40.185 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:00:40.187 -04:00 [ERR] Sucedio el siguiente error: Not provided by the enviroment
+System.Exception: Not provided by the enviroment
+   at UPB.CoreLogic.Managers.PatientManager..ctor(IConfiguration configuration) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 16
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:00:40.239 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - text/json 84.8573ms
+2023-05-02 00:00:41.308 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-02 00:00:41.311 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:00:41.313 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:00:41.315 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 0.1772ms
+2023-05-02 00:00:41.317 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:00:41.318 -04:00 [ERR] Sucedio el siguiente error: Not provided by the enviroment
+System.Exception: Not provided by the enviroment
+   at UPB.CoreLogic.Managers.PatientManager..ctor(IConfiguration configuration) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 16
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:00:41.324 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - text/json 16.2234ms
+2023-05-02 00:01:25.678 -04:00 [INF] Application is shutting down...
+2023-05-02 00:01:36.494 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:01:36.527 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:01:36.529 -04:00 [INF] Hosting environment: Development
+2023-05-02 00:01:36.530 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:01:39.384 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:01:39.466 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 84.6954ms
+2023-05-02 00:01:39.771 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:01:39.844 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.0426ms
+2023-05-02 00:01:42.745 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-02 00:01:42.749 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:01:42.757 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:01:42.766 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 1.25ms
+2023-05-02 00:01:42.774 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:01:42.775 -04:00 [ERR] Sucedio el siguiente error: Not provided by the enviroment
+System.Exception: Not provided by the enviroment
+   at UPB.CoreLogic.Managers.PatientManager..ctor(IConfiguration configuration) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 16
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:01:42.809 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - text/json 64.3210ms
+2023-05-02 00:03:40.618 -04:00 [INF] Application is shutting down...
+2023-05-02 00:03:51.937 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:03:51.973 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:03:51.975 -04:00 [INF] Hosting environment: Development
+2023-05-02 00:03:51.976 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:03:54.621 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:03:54.705 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 86.6810ms
+2023-05-02 00:03:55.005 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:03:55.079 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.6422ms
+2023-05-02 00:03:57.615 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-02 00:03:57.621 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:03:57.628 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:03:57.638 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Patient, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-02 00:03:57.647 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 11.0473ms
+2023-05-02 00:03:57.652 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:03:57.654 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 38.8066ms
+2023-05-02 00:04:10.677 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient/123 - -
+2023-05-02 00:04:10.679 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:04:10.690 -04:00 [INF] Route matched with {action = "GetByCI", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient GetByCI(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:04:10.698 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Patient'.
+2023-05-02 00:04:10.701 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree) in 7.8325ms
+2023-05-02 00:04:10.705 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:04:10.706 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient/123 - - - 200 - application/json;+charset=utf-8 28.3758ms
+2023-05-02 00:04:14.598 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient/1234 - -
+2023-05-02 00:04:14.600 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:04:14.603 -04:00 [INF] Route matched with {action = "GetByCI", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient GetByCI(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:04:14.607 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree) in 1.5832ms
+2023-05-02 00:04:14.608 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:04:14.611 -04:00 [ERR] Sucedio el siguiente error: Patient not found
+System.Exception: Patient not found
+   at UPB.CoreLogic.Managers.PatientManager.GetByCI(Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 36
+   at UPB.PracticeThree.Controllers.PatientController.GetByCI(Int32 CI) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 27
+   at lambda_method4(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:04:14.645 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient/1234 - - - 200 - text/json 47.7941ms
+2023-05-02 00:05:37.502 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5137/Patient application/json 78
+2023-05-02 00:05:49.823 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:06:01.529 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:06:01.531 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 11707.1930ms
+2023-05-02 00:06:01.533 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Post(UPB.CoreLogic.Models.Patient) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:06:01.549 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree) in 14.3673ms
+2023-05-02 00:06:01.554 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:06:01.555 -04:00 [ERR] Sucedio el siguiente error: Invalid CI
+System.Exception: Invalid CI
+   at UPB.CoreLogic.Managers.PatientManager.Create(String name, String lastname, Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 73
+   at UPB.PracticeThree.Controllers.PatientController.Post(Patient patientToCreate) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 39
+   at lambda_method6(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:06:01.562 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5137/Patient application/json 78 - 200 - text/json 24059.7042ms
+2023-05-02 00:06:01.949 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:06:01.953 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.8050ms
+2023-05-02 00:06:33.323 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5137/Patient application/json 78
+2023-05-02 00:06:46.351 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:06:46.352 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Post(UPB.CoreLogic.Models.Patient) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:06:46.355 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree) in 1.0975ms
+2023-05-02 00:06:46.356 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:06:46.358 -04:00 [ERR] Sucedio el siguiente error: Invalid CI
+System.Exception: Invalid CI
+   at UPB.CoreLogic.Managers.PatientManager.Create(String name, String lastname, Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 73
+   at UPB.PracticeThree.Controllers.PatientController.Post(Patient patientToCreate) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 39
+   at lambda_method6(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:06:46.363 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5137/Patient application/json 78 - 200 - text/json 13040.0847ms
+2023-05-02 00:10:24.158 -04:00 [INF] Application is shutting down...
+2023-05-02 00:10:42.006 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:10:42.041 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:10:42.042 -04:00 [INF] Hosting environment: Development
+2023-05-02 00:10:42.043 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:10:46.851 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:10:46.930 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 81.4008ms
+2023-05-02 00:10:47.447 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:10:47.520 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.1228ms
+2023-05-02 00:10:50.057 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-02 00:10:50.061 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:10:50.072 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:10:50.081 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Patient, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-02 00:10:50.090 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 11.8156ms
+2023-05-02 00:10:50.094 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:10:50.096 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 39.8450ms
+2023-05-02 00:10:58.426 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient/1234 - -
+2023-05-02 00:10:58.429 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:10:58.441 -04:00 [INF] Route matched with {action = "GetByCI", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient GetByCI(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:10:58.452 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree) in 5.4802ms
+2023-05-02 00:10:58.455 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:10:58.457 -04:00 [ERR] Sucedio el siguiente error: Patient not found
+System.Exception: Patient not found
+   at UPB.CoreLogic.Managers.PatientManager.GetByCI(Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 36
+   at UPB.PracticeThree.Controllers.PatientController.GetByCI(Int32 CI) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 27
+   at lambda_method4(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:10:58.494 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient/1234 - - - 200 - text/json 68.2834ms
+2023-05-02 00:11:22.328 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient/1234234 - -
+2023-05-02 00:11:22.331 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:11:22.332 -04:00 [INF] Route matched with {action = "GetByCI", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient GetByCI(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:11:22.336 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree) in 0.8988ms
+2023-05-02 00:11:22.338 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-02 00:11:22.339 -04:00 [ERR] Sucedio el siguiente error: Patient not found
+System.Exception: Patient not found
+   at UPB.CoreLogic.Managers.PatientManager.GetByCI(Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 36
+   at UPB.PracticeThree.Controllers.PatientController.GetByCI(Int32 CI) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 27
+   at lambda_method4(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:11:22.346 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient/1234234 - - - 200 - text/json 17.5852ms
+2023-05-02 00:11:38.877 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5137/Patient?CI=1233434 - -
+2023-05-02 00:11:38.880 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Delete (PracticeThree)'
+2023-05-02 00:11:38.885 -04:00 [INF] Route matched with {action = "Delete", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Delete(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:11:38.896 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Delete (PracticeThree) in 6.5116ms
+2023-05-02 00:11:38.899 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Delete (PracticeThree)'
+2023-05-02 00:11:38.900 -04:00 [ERR] Sucedio el siguiente error: Patient not found
+System.Exception: Patient not found
+   at UPB.CoreLogic.Managers.PatientManager.Delete(Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 104
+   at UPB.PracticeThree.Controllers.PatientController.Delete(Int32 CI) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 44
+   at lambda_method6(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:11:38.905 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5137/Patient?CI=1233434 - - - 200 - text/json 28.5568ms
+2023-05-02 00:12:04.580 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5137/Patient/12344444 application/json 49
+2023-05-02 00:12:04.582 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-02 00:12:04.587 -04:00 [INF] Route matched with {action = "Put", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Put(Int32, UPB.CoreLogic.Models.PatientPUTmodel) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:12:04.602 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree) in 11.5846ms
+2023-05-02 00:12:04.604 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-02 00:12:04.605 -04:00 [ERR] Sucedio el siguiente error: Patient not found
+System.Exception: Patient not found
+   at UPB.CoreLogic.Managers.PatientManager.Update(Int32 ci, String name, String lastname) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 53
+   at UPB.PracticeThree.Controllers.PatientController.Put(Int32 CI, PatientPUTmodel patientToUpdate) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 34
+   at lambda_method8(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:12:04.610 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5137/Patient/12344444 application/json 49 - 200 - text/json 30.6990ms
+2023-05-02 00:12:06.209 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5137/Patient/12344444 application/json 49
+2023-05-02 00:12:06.212 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-02 00:12:06.213 -04:00 [INF] Route matched with {action = "Put", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Put(Int32, UPB.CoreLogic.Models.PatientPUTmodel) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:12:06.217 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree) in 0.7055ms
+2023-05-02 00:12:06.219 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-02 00:12:06.220 -04:00 [ERR] Sucedio el siguiente error: Patient not found
+System.Exception: Patient not found
+   at UPB.CoreLogic.Managers.PatientManager.Update(Int32 ci, String name, String lastname) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 53
+   at UPB.PracticeThree.Controllers.PatientController.Put(Int32 CI, PatientPUTmodel patientToUpdate) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 34
+   at lambda_method8(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:12:06.226 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5137/Patient/12344444 application/json 49 - 200 - text/json 17.0542ms
+2023-05-02 00:12:28.922 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5137/Patient/234523 application/json 51
+2023-05-02 00:12:28.925 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-02 00:12:28.928 -04:00 [INF] Route matched with {action = "Put", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Put(Int32, UPB.CoreLogic.Models.PatientPUTmodel) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:12:28.931 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree) in 1.4079ms
+2023-05-02 00:12:28.933 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-02 00:12:28.934 -04:00 [ERR] Sucedio el siguiente error: Invalid Name
+System.Exception: Invalid Name
+   at UPB.CoreLogic.Managers.PatientManager.Update(Int32 ci, String name, String lastname) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 57
+   at UPB.PracticeThree.Controllers.PatientController.Put(Int32 CI, PatientPUTmodel patientToUpdate) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 34
+   at lambda_method8(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:12:28.940 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5137/Patient/234523 application/json 51 - 200 - text/json 18.4595ms
+2023-05-02 00:12:56.220 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5137/Patient application/json 78
+2023-05-02 00:12:56.221 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:12:56.224 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Post(UPB.CoreLogic.Models.Patient) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:12:56.230 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree) in 2.3191ms
+2023-05-02 00:12:56.232 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:12:56.233 -04:00 [ERR] Sucedio el siguiente error: Invalid CI
+System.Exception: Invalid CI
+   at UPB.CoreLogic.Managers.PatientManager.Create(String name, String lastname, Int32 ci) in D:\UPB\Certificación1\practiceThree\CoreLogic\Managers\PatientManager.cs:line 73
+   at UPB.PracticeThree.Controllers.PatientController.Post(Patient patientToCreate) in D:\UPB\Certificación1\practiceThree\PracticeThree\Controllers\PatientController.cs:line 39
+   at lambda_method10(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at UPB.PracticeThree.Middlewares.ExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\UPB\Certificación1\practiceThree\PracticeThree\Middlewares\ExceptionHandlerMiddleware.cs:line 21
+2023-05-02 00:12:56.239 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5137/Patient application/json 78 - 200 - text/json 19.5701ms
+2023-05-02 00:13:02.250 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5137/Patient application/json 81
+2023-05-02 00:13:02.252 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:13:02.254 -04:00 [INF] Route matched with {action = "Post", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Post(UPB.CoreLogic.Models.Patient) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:13:02.258 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Patient'.
+2023-05-02 00:13:02.260 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree) in 3.3395ms
+2023-05-02 00:13:02.263 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Post (PracticeThree)'
+2023-05-02 00:13:02.264 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5137/Patient application/json 81 - 200 - application/json;+charset=utf-8 14.4900ms
+2023-05-02 00:13:05.931 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-02 00:13:05.934 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:13:05.935 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-02 00:13:05.938 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Patient, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-02 00:13:05.940 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 1.7748ms
+2023-05-02 00:13:05.941 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-02 00:13:05.942 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 10.9612ms
+2023-05-02 00:13:26.477 -04:00 [INF] Application is shutting down...

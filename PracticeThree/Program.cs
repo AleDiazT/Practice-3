@@ -19,6 +19,8 @@ var configurationBuilder = new ConfigurationBuilder()
 IConfiguration Configuration = configurationBuilder.Build(); 
 string siteTitle = Configuration.GetSection("Title").Value;
 
+builder.Services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
+
 builder.Services.AddSwaggerGen(options =>
 {
     options. SwaggerDoc("v1", new OpenApiInfo
@@ -34,6 +36,7 @@ var loggerConfiguration = new LoggerConfiguration()
     .ReadFrom.Configuration(Configuration);
 
 Log.Logger = loggerConfiguration.CreateLogger();
+builder.Services.AddSingleton(Log.Logger);
 
 builder.Host.UseSerilog();
 
@@ -46,7 +49,6 @@ app.UseGlobalExceptionHandler();
 //app.UseCors();
 app.UseSwagger();
 app.UseSwaggerUI();
-
 app.MapControllers();
 
 app.Run();
