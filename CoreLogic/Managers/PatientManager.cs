@@ -97,6 +97,7 @@ public class PatientManager
         }
         Patient patientDeleted = _patients[patientDeletedIndex];
         _patients.RemoveAt(patientDeletedIndex);
+        DeletePatient(patientDeleted);
         return patientDeleted;
     }
 
@@ -205,6 +206,38 @@ public class PatientManager
                     };
                     updatedPatients.Add(currentPatient);
                 }
+            }
+        }
+        using (StreamWriter writer = new StreamWriter(_path, false))
+        {
+            foreach (Patient patient in updatedPatients)
+            {
+                writer.WriteLine($"{patient.Name},{patient.LastName},{patient.CI},{patient.Btype}");
+            }
+        }
+    }
+    public void DeletePatient(Patient patientDelete)
+    {
+        List<Patient> updatedPatients = new List<Patient>();
+
+        using (StreamReader reader = new StreamReader(_path))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                string[] patientData = line.Split(';');
+                int currentPatientCI = int.Parse(patientData[2]);
+                if (currentPatientCI != patientDelete.CI)
+                {
+                    Patient currentPatient = new Patient()
+                    {
+                        CI = currentPatientCI,
+                        Name = patientData[0],
+                        LastName = patientData[1],
+                        Btype = patientData[3]
+                    };
+                    updatedPatients.Add(currentPatient);
+                }     
             }
         }
         using (StreamWriter writer = new StreamWriter(_path, false))
