@@ -464,3 +464,11 @@ System.Exception: Invalid CI
 2023-05-02 00:32:00.760 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
 2023-05-02 00:32:00.837 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.0445ms
 2023-05-02 00:32:06.452 -04:00 [INF] Application is shutting down...
+2023-05-02 00:43:45.420 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-02 00:43:45.454 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-02 00:43:45.457 -04:00 [INF] Hosting environment: Development
+2023-05-02 00:43:45.457 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-02 00:43:48.474 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-02 00:43:48.561 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 89.4371ms
+2023-05-02 00:43:48.809 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-02 00:43:48.891 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.4503ms

@@ -1,0 +1,65 @@
+2023-05-03 20:38:20.712 -04:00 [INF] Now listening on: http://localhost:5137
+2023-05-03 20:38:21.003 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-03 20:38:21.009 -04:00 [INF] Hosting environment: Development
+2023-05-03 20:38:21.011 -04:00 [INF] Content root path: D:\UPB\Certificación1\practiceThree\PracticeThree\
+2023-05-03 20:40:27.173 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger - -
+2023-05-03 20:40:27.244 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger - - - 301 0 - 74.7879ms
+2023-05-03 20:40:27.256 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/index.html - -
+2023-05-03 20:40:27.318 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/index.html - - - 200 - text/html;charset=utf-8 61.4635ms
+2023-05-03 20:40:27.514 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/swagger-ui.css - -
+2023-05-03 20:40:27.515 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/swagger-ui-bundle.js - -
+2023-05-03 20:40:27.515 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/swagger-ui-standalone-preset.js - -
+2023-05-03 20:40:27.758 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-03 20:40:27.762 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 247.5310ms
+2023-05-03 20:40:27.780 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-03 20:40:27.784 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 269.6137ms
+2023-05-03 20:40:27.806 -04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-03 20:40:27.809 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/swagger-ui.css - - - 200 143632 text/css 294.1970ms
+2023-05-03 20:40:28.213 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - -
+2023-05-03 20:40:28.244 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/swagger/favicon-32x32.png - -
+2023-05-03 20:40:28.247 -04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-03 20:40:28.251 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/favicon-32x32.png - - - 200 628 image/png 7.0484ms
+2023-05-03 20:40:28.311 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.0877ms
+2023-05-03 20:40:30.892 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-03 20:40:30.897 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-03 20:40:30.906 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-03 20:40:30.914 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Patient, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-03 20:40:30.925 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 9.9857ms
+2023-05-03 20:40:30.930 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-03 20:40:30.932 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 39.8469ms
+2023-05-03 20:40:44.269 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient/123 - -
+2023-05-03 20:40:44.271 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-03 20:40:44.287 -04:00 [INF] Route matched with {action = "GetByCI", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient GetByCI(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-03 20:40:44.300 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Patient'.
+2023-05-03 20:40:44.302 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree) in 9.9961ms
+2023-05-03 20:40:44.305 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.GetByCI (PracticeThree)'
+2023-05-03 20:40:44.307 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient/123 - - - 200 - application/json;+charset=utf-8 38.1762ms
+2023-05-03 20:41:05.679 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5137/Patient/123 application/json 47
+2023-05-03 20:41:05.681 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-03 20:41:05.685 -04:00 [INF] Route matched with {action = "Put", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Put(Int32, UPB.CoreLogic.Models.PatientPUTmodel) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-03 20:41:05.706 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Patient'.
+2023-05-03 20:41:05.708 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree) in 18.3061ms
+2023-05-03 20:41:05.711 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Put (PracticeThree)'
+2023-05-03 20:41:05.714 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5137/Patient/123 application/json 47 - 200 - application/json;+charset=utf-8 34.9670ms
+2023-05-03 20:41:16.977 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-03 20:41:16.979 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-03 20:41:16.981 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-03 20:41:16.985 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Patient, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-03 20:41:16.988 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 2.5828ms
+2023-05-03 20:41:16.992 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-03 20:41:16.994 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 16.6025ms
+2023-05-03 20:41:27.011 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5137/Patient?CI=4343 - -
+2023-05-03 20:41:27.014 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Delete (PracticeThree)'
+2023-05-03 20:41:27.019 -04:00 [INF] Route matched with {action = "Delete", controller = "Patient"}. Executing controller action with signature UPB.CoreLogic.Models.Patient Delete(Int32) on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-03 20:41:27.032 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Patient'.
+2023-05-03 20:41:27.035 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Delete (PracticeThree) in 11.2093ms
+2023-05-03 20:41:27.037 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Delete (PracticeThree)'
+2023-05-03 20:41:27.039 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5137/Patient?CI=4343 - - - 200 - application/json;+charset=utf-8 27.6313ms
+2023-05-03 20:41:31.608 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5137/Patient - -
+2023-05-03 20:41:31.611 -04:00 [INF] Executing endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-03 20:41:31.613 -04:00 [INF] Route matched with {action = "Get", controller = "Patient"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Patient] Get() on controller UPB.PracticeThree.Controllers.PatientController (PracticeThree).
+2023-05-03 20:41:31.618 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Patient, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-03 20:41:31.620 -04:00 [INF] Executed action UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree) in 2.351ms
+2023-05-03 20:41:31.624 -04:00 [INF] Executed endpoint 'UPB.PracticeThree.Controllers.PatientController.Get (PracticeThree)'
+2023-05-03 20:41:31.626 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5137/Patient - - - 200 - application/json;+charset=utf-8 17.8832ms
+2023-05-03 20:41:41.854 -04:00 [INF] Application is shutting down...
